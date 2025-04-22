@@ -5,7 +5,7 @@ trigger_key = "q" # This key is used to start and end the program and cannot be 
 recording = False # If True, the program will record the key presses, otherwise it will play them back.
 
 timestamp = 0
-timestamps = [0.7613341808319092, 0.7608239650726318, 0.9649488925933838, 3.307446002960205, 1.5021884441375732, 0.8427848815917969, 0.8084704875946045, 0.7449967861175537, 1.0090446472167969, 0.7854504585266113, 0.597069501876831, 0.5920851230621338, 0.764451265335083, 0.8824634552001953]
+timestamps = [0.9860084056854248, 1.3622310161590576, 1.1661436557769775, 1.267514705657959, 1.1863276958465576, 1.8957114219665527, 1.2910470962524414, 0.9431734085083008, 0.9000339508056641]
 
 def write_key(thingy_data_whaaat):
     global timestamps,timestamp
@@ -17,6 +17,7 @@ def write_key(thingy_data_whaaat):
 if __name__ == "__main__":
     if recording:
         print(f"Recording will begin after you press: '{trigger_key}' and will stop when you press it again.")
+        timestamps = []
 
         keyboard.wait(trigger_key)
         print("Recording...")
